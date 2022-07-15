@@ -1,6 +1,6 @@
 token       = ""
 owner       = "manuel-org"
 repository  = "repo-terraform-github"
-members     = ["devopsmanuel"]
-developers  = ["devopsmanuel"]
+members     = ["devopsmanuel", "manueljflorez"]
+developers  = ["devopsmanuel", "manueljflorez"]
 approvers   = ["manuelflorez"]
