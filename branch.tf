@@ -10,6 +10,7 @@ resource "github_branch" "qa" {
 
 resource "github_branch_protection" "branch_main" {
   repository_id = github_repository.repository.node_id
+  pattern          = "main"
 
   required_pull_request_reviews {
     dismiss_stale_reviews  = true
