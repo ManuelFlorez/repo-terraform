@@ -24,3 +24,13 @@
 ```📜teams.tf``` contiene el codigo necesario para crear los teams __developer__, __approvers__, agrega los teams al repositorio, agrega los miembros de la organización a diferentes teams que son identificados en un array de __developers__ y un array de __approvers__ ingresado como variables.
 
 ```📜updates.tfvars``` contiene la data de las variables a ingresar: __token__, __owner__, __repository__, __members__, __developers__, __approvers__.
+
+## Comandos a implementar en  terraform
+
+```
+terraform plan -var-file="updates.tfvars"
+
+terraform apply -var-file="updates.tfvars"
+
+terraform destroy -var-file="updates.tfvars"
+```
