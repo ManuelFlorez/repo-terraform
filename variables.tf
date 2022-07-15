@@ -9,3 +9,7 @@ variable "owner" {
 variable "repository" {
   type = string
 }
+
+variable "members" {
+  type = list(string)
+}
