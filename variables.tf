@@ -13,3 +13,11 @@ variable "repository" {
 variable "members" {
   type = list(string)
 }
+
+variable "devopsmanuel" {
+  type = list(string)
+}
+
+variable "manuelflorez" {
+  type = list(string)
+}
