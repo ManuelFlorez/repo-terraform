@@ -22,16 +22,7 @@ resource "github_team_repository" "team_repository_approvers" {
 
 resource "github_team_members" "developer_team_members" {
   team_id  = github_team.developer_team.id
-
-  members {
-    for_each = toset(var.developers)
-    username = each.key
-    role     = "member"
-  }
-  /*
-  members {
-    username = "AnotherUser"
-    role     = "member"
-  }
-  */
+  for_each = toset(var.developers)
+  username = each.key
+  role     = "member"
 }
