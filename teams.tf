@@ -26,3 +26,10 @@ resource "github_team_membership" "developer_team_members" {
   username = each.key
   role     = "member"
 }
+
+resource "github_team_membership" "approvers_team_members" {
+  team_id  = github_team.approvers_team.id
+  for_each = toset(var.approvers)
+  username = each.key
+  role     = "member"
+}
