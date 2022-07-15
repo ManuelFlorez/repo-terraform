@@ -17,5 +17,5 @@ resource "github_team_repository" "team_repository_developer" {
 resource "github_team_repository" "team_repository_approvers" {
   team_id    = github_team.approvers_team.id
   repository = github_repository.repository.name
-  permission = "pull"
+  permission = "push"
 }
