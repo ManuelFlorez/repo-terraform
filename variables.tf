@@ -5,3 +5,7 @@ variable "token" {
 variable "owner" {
   type = string
 }
+
+variable "repository" {
+  type = string
+}

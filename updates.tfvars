@@ -1,3 +1,3 @@
 token = ""
 owner = "manuel-org"
-repositorio = "repo-terraform-github"
+repository = "repo-terraform-github"
