@@ -14,10 +14,10 @@ variable "members" {
   type = list(string)
 }
 
-variable "devopsmanuel" {
+variable "developers" {
   type = list(string)
 }
 
-variable "manuelflorez" {
+variable "approvers" {
   type = list(string)
 }
