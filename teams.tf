@@ -20,13 +20,9 @@ resource "github_team_repository" "team_repository_approvers" {
   permission = "push"
 }
 
-resource "github_team_members" "developer_team_members" {
+resource "github_team_membership" "developer_team_members" {
   team_id  = github_team.developer_team.id
-
-  members {
-    for_each = toset(var.developers)
-    username = each.key
-    role     = "member"
-  }
-  
+  for_each = toset(var.developers)
+  username = each.key
+  role     = "member"
 }
