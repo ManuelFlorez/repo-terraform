@@ -38,5 +38,5 @@ terraform destroy -var-file="updates.tfvars"
 ## Enlaces a los providers
  - [integrations/github](https://registry.terraform.io/providers/integrations/github/latest/docs)
 
-## documentación de herramientas
+## Documentación de herramientas
   ***[terraform.io](https://registry.terraform.io/)***
