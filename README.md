@@ -13,15 +13,15 @@
  ┗ 📜variables.tf
 ```
 
-```📜branch.tf``` contiene el código necesario para generar las ramas __dev__, __qa__ y las reglas necesarias para proteges la rama __main__.
+```📜branch.tf``` contiene el código necesario para generar las ramas __dev__, __qa__ y las reglas necesarias para proteger la rama __main__.
 
-```📜members.tf``` contiene el codigo necesario para agregar miembros a la organización de github, tomando un array de username como entrada de variables.
+```📜members.tf``` contiene el código necesario para agregar miembros a la organización de github, tomando un array de username como entrada de variables.
 
-```📜provider.tf``` se declara de los providers, en este esenario se trabaja con el provider de github __integrations/github__ en su version __4.26.1__, y se pasa la configuración de la organización con la variable __owner__ y la variable de acceso __token__.
+```📜provider.tf``` es donde se declaran de los providers, en este escenario se trabaja con el provider de github __integrations/github__ en su version __4.26.1__, y se pasa la configuración de la organización con la variable __owner__ y la variable de acceso __token__.
 
 ```📜repository.tf``` contiene el código necesario para crear un repositorio en github obtiene el nopmbre del repositorio por medio del uso de una variable __repository__.
 
-```📜teams.tf``` contiene el codigo necesario para crear los teams __developer__, __approvers__, agrega los teams al repositorio, agrega los miembros de la organización a diferentes teams que son identificados en un array de __developers__ y un array de __approvers__ ingresado como variables.
+```📜teams.tf``` contiene el código necesario para crear los teams __developer__, __approvers__, agrega los teams al repositorio, agrega los miembros de la organización a diferentes teams que son identificados en un array de __developers__ y un array de __approvers__ ingresado como variables.
 
 ```📜updates.tfvars``` contiene la data de las variables a ingresar: __token__, __owner__, __repository__, __members__, __developers__, __approvers__.
 
@@ -34,3 +34,9 @@ terraform apply -var-file="updates.tfvars"
 
 terraform destroy -var-file="updates.tfvars"
 ```
+
+## Enlaces a los providers
+ - [integrations/github](https://registry.terraform.io/providers/integrations/github/latest/docs)
+
+## documentación de herramientas
+  ***[terraform.io](https://registry.terraform.io/)***
